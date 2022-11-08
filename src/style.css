@@ -1,0 +1,23 @@
+#checkpoint{
+    display:flex;
+    align-items: center;
+}
+#checkpoint, h1{
+    font-family: fantasy;
+}
+
+#Card{
+    width: 40vw;
+    min-height: 20vh;
+    max-height: 40vw;
+}
+#form-error{
+    color:red;
+}
+#dados{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 300px;
+}
