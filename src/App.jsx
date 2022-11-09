@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './style.css'
+import './style.scss'
 import { Card } from './Card'
 
 function App() {
@@ -57,12 +57,12 @@ function App() {
             <form className={formularioErro ? 'form-error' : ''} onSubmit={event => cadastroCor(event)}>
                 <div className='dados'>
                 <div>
-                    <label htmlFor="novoNome">Nome da cor</label>
-                    <input id="novoNome" name="novoNome" type="text" value={novoNome} placeholder="Preencha o nome" onChange={event => setNovoNome(event.target.value)} />
+                    <label htmlFor="novoNome">Nome da cor:  </label>
+                    <input id="novoNome" name="novoNome" type="text" value={novoNome.trim()} placeholder="Preencha o nome" onChange={event => setNovoNome(event.target.value)} />
                 </div>
 
                 <div>
-                    <label htmlFor="novaCor">Cor</label><br />
+                    <label htmlFor="novaCor">Cor:  </label>
                     <input id="novaCor" name="novaCor" type="color" value={novaCor} onChange={event => setNovaCor(event.target.value)} />
                 </div>
                 </div>
