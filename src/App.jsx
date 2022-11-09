@@ -9,18 +9,18 @@ function App() {
     const [formularioErro, setFormularioErro] = useState(false)
     
     const [listaCores, setListaCores] = useState([
-        // {
-        //     novoNome: 'Rodrigo Araújo',
-        //     novaCor: ' 	#FFDAB9'
-        // },
-        // {
-        //     novoNome: 'Matheus Almeida',
-        //     novaCor: '#00BFFF'
-        // },
-        // {
-        //     novoNome: 'Maiara Pontes',
-        //     novaCor: '#EE82EE'
-        // }
+        {
+            novoNome: 'Pêssego',
+            novaCor: ' 	#FFDAB9'
+        },
+        {
+            novoNome: 'Ciano',
+            novaCor: '#00BFFF'
+        },
+        {
+            novoNome: 'Magenta',
+            novaCor: '#EE82EE'
+        }
     ])
 
     function cadastroCor(event) {
@@ -28,8 +28,9 @@ function App() {
         event.preventDefault()
 
         const novoCadastroCor = {
-
-        }
+            novaCor: novaCor,
+            novoNome: novoNome
+    }
 
         if (novoNome === '' || novaCor === '') {
 
@@ -56,7 +57,7 @@ function App() {
             <form className={formularioErro ? 'form-error' : ''} onSubmit={event => cadastroCor(event)}>
                 <div className='dados'>
                 <div>
-                    <label htmlFor="novoNome">Nome</label>
+                    <label htmlFor="novoNome">Nome da cor</label>
                     <input id="novoNome" name="novoNome" type="text" value={novoNome} placeholder="Preencha o nome" onChange={event => setNovoNome(event.target.value)} />
                 </div>
 
