@@ -48,7 +48,7 @@ function App() {
     }
 
     return (
-        <html lang="en">
+        <html lang="en" className="color-change-5x">
             <main className="checkpoint">
 
             <div className="tittle-wrapper">
@@ -62,14 +62,19 @@ function App() {
                 </div>
 
                 <div>
-                    <label htmlFor="novaCor">Cor</label>
+                    <label htmlFor="novaCor">Cor</label><br />
                     <input id="novaCor" name="novaCor" type="color" value={novaCor} onChange={event => setNovaCor(event.target.value)} />
                 </div>
                 </div>
                 <button type='submit'>Cadastrar cor</button>
             </form>
+            {
+                formularioErro ? (
+                    <span>Preencha todos os campos</span>
+                ) : null
+            }
             <h1>Lista de Cores</h1>
-            <section>
+            <section class="listaDeCores">
             {
                     listaCores.map(
                         cor => {
@@ -82,13 +87,6 @@ function App() {
                     )
                 }
             </section>
-
-            {
-                formularioErro ? (
-                    <span>Preencha todos os campos</span>
-                ) : null
-            }
-
         </main>
     </html>
     )

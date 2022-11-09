@@ -1,13 +1,12 @@
-#checkpoint{
-    display:flex;
-    align-items: center;
-}
 #checkpoint, h1{
     font-family: fantasy;
+    width: 70vw;
 }
 
-#Card{
-
+#Card, div{
+    width: 15vw;
+    padding: 2px 0px 0.5px 5px;
+    margin: 5px auto 5px auto;
 }
 #form-error{
     color:red;
@@ -15,7 +14,62 @@
 #dados{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 button{
-    width: 300px;
+    width: 15vw;
+    min-height: 5vh;
+    max-height: 15vw;
+    color: azure;
+    font-size:large;
+    border:lightslategrey, solid;
+    background-color: black;
+    border-radius: 5px;
 }
+#listaDeCores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* .color-change-5x {
+	-webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+}
+ @-webkit-keyframes color-change-5x {
+    0% {
+      background: #191dea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #329115;
+    }
+  }
+  @keyframes color-change-5x {
+    0% {
+        background: #191dea;
+    }
+      25% {
+        background: #b22cff;
+    }
+      50% {
+        background: #ea2222;
+    }
+      75% {
+        background: #f5be10;
+    }
+      100% {
+        background: #329115;
+    }
+  } */
+  
